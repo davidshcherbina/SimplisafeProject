@@ -1,6 +1,6 @@
 package Simplisafe;
 
-import Simplisafe.AbstractClass.Sensor;
+import Simplisafe.Class.Sensor;
 
 public class EntrySensor extends Sensor {
 
