@@ -23,6 +23,8 @@ public class BaseStation {
     static Timer timer;
     static int interval;
 
+    // get singal
+    private String keyPadSignal;
 
     public BaseStation(){
         this.serialNum = 000000;
@@ -103,6 +105,10 @@ public class BaseStation {
         if (interval == 1)
             timer.cancel();
         return --interval;
+    }
+
+    public void getSignalFromKeyPad(String str){
+        this.keyPadSignal = str;
     }
 
 }
