@@ -1,6 +1,6 @@
 package Simplisafe;
 
-import Simplisafe.AbstractClass.Detector;
+import Simplisafe.Class.Detector;
 
 public class SmokeDetector extends Detector {
 

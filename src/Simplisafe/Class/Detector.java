@@ -1,20 +1,20 @@
-package Simplisafe.AbstractClass;
+package Simplisafe.Class;
 
 import Simplisafe.BaseStation;
 
-public class Sensor {
+public class Detector {
 
     private boolean status;
     private final BaseStation baseStation;
-    private final String sensorType;
+    private final String detectorType;
 
-    public Sensor(String detectorType){
+    public Detector(String detectorType){
         this.status = false;
         this.baseStation = new BaseStation();
-        this.sensorType = detectorType;
+        this.detectorType = detectorType;
     }
 
-    public void sense(){
+    public void detect(){
         status = true;
         sendSignalToBaseStation();
     }
@@ -24,6 +24,7 @@ public class Sensor {
     }
 
     public void sendSignalToBaseStation() {
-        baseStation.getSignalFromDevice(sensorType);
+        baseStation.getSignalFromDevice(detectorType);
     }
+
 }
