@@ -11,8 +11,10 @@ public class BaseStation {
     // system on/off stauts
     private boolean systemStatus;
 
-    // Off, Blue and Solid Red
+    // Off, Blue and Solid Red status
     private String LEDStatus;
+
+    //get signal from devices and sensor
     private String kindOfSignal;
 
     private CellularAlarmTransmitter cat;
@@ -23,7 +25,7 @@ public class BaseStation {
     static Timer timer;
     static int interval;
 
-    // get singal
+    // get signal from keypad
     private String keyPadSignal;
 
     public BaseStation(){
