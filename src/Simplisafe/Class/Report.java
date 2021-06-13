@@ -1,5 +1,6 @@
 package Simplisafe.Class;
 
+// Object to store events
 public class Report {
 
     public Object device;
