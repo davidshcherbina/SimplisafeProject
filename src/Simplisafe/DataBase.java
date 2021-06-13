@@ -45,7 +45,6 @@ public class DataBase {
             return sensorList;
         }
         throw new Exception("Type of list not found.");
-
     }
 
 
